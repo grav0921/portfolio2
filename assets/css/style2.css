@@ -1,0 +1,517 @@
+:root{
+    --color-semiwhite:whitesmoke;
+}
+
+body{
+    font-family:"montserrat";
+    background-color: cornsilk;
+    scroll-behavior: smooth;
+    z-index: -1;
+    height: 3000vh;
+    position: relative;
+}
+
+
+/* ====== */
+/* a TO z */
+/* ====== */
+
+
+/* letter A */
+a{
+    color: var(--bs-dark);
+    text-decoration: none !important;
+    position: relative;
+}
+a:hover{
+    color: var(--bs-dark);
+}
+a .underline{
+    width: 100%;
+    height: 1px;
+    background-color: var(--bs-dark);
+    position: absolute;
+    bottom: -3px;
+}
+.about-me {
+    /* background-color: blue; */
+    position: relative;
+    /* overflow: hidden; */
+    height: 320px;
+    overflow-y: hidden;
+}
+.about-me::-webkit-scrollbar,
+.artworks::-webkit-scrollbar{
+    display: none;
+}
+.about-header #ralaks{
+    position: relative;
+    /* bottom:-10px; */
+}
+.artworks{
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+}
+/* end of letter A  */
+
+
+/* letter of C  */
+
+.content-works{
+    padding-top: 190px;
+    padding-bottom: 190px;
+    height: 100vh;
+}
+#contact{
+    display: none;
+}
+.contact{
+    padding-top: 200px;
+    padding-bottom: 280px;
+}
+.contact-content{
+    position: relative;
+    overflow: hidden;
+}
+.contact-hide{
+    position: relative;
+    top: 115px;
+    transition: all .3s;
+}
+.contact-show{
+    top: 0;
+}
+
+/* end of letter C  */
+
+
+
+/* lettr D  */
+.d-block{
+    display: block;
+}
+/* end of letter D  */
+
+
+/* letter F */
+.f-bold{
+    font-weight: bold;
+}
+.f-light{
+    font-weight: light;
+}
+.f-normal{
+    font-weight: normal;
+}
+.fade-hide{
+    opacity: 0;
+    transition: .5s;
+}
+.fade-show{
+    opacity: 1;
+}
+.find-meh{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.fs-12{
+    font-size: 12px !important;
+  }
+  .fs-16{
+    font-size: 16px !important;
+  }
+  .fs-18{
+    font-size: 18px !important;
+  }
+  .fs-24{
+    font-size: 24px !important;
+  }
+  .fs-32{
+    font-size: 32px !important;
+  }
+/* end of letter F  */
+
+
+
+/* letter G  */
+.grid-sites{
+    --minthumb: 350px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--minthumb), 1fr));
+    grid-auto-flow: row dense;
+    /* grid-gap: 30px var(--gutter); */
+    gap: 0.8rem;
+    padding-bottom: 30px;
+}
+/* end of letter G  */
+
+
+
+/* letter H */
+.heading-1 {
+    font-size: clamp(42px, -6.5915492958px + 9.7183098592vw, 180px);
+    line-height: 0.9;
+    font-weight: 800;
+}
+.heading-2{
+    font-size: clamp(42px, 4.676056338px + 7.4647887324vw, 148px);
+    line-height: normal;
+    font-weight: 700;
+}
+.heading-3{
+    font-size: clamp(36px, 14.8732394366px + 4.2253521127vw, 96px);
+    line-height: normal;
+}
+.heading-4{
+    font-size: clamp(32px, 16.5070422535px + 3.0985915493vw, 76px);
+    line-height: normal;
+}
+.heading-5{
+    font-size: clamp(26px, 15.4366197183px + 2.1126760563vw, 56px);
+    line-height: 120%;
+}
+.heading-p{
+    font-size: 1rem;
+    font-weight: 700;
+}
+header{
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+}
+header .name{
+    display: flex;
+    justify-content: space-between;
+}
+.hg-100{
+    height: 100vh;
+}
+/* end of letter H */
+
+
+
+/* letter i  */
+.icon-hide{
+    position: absolute;
+    top: 600px;
+    width: 100%;
+    transition: all .3s;
+}
+.icon-show{
+    top: 0;
+}
+#iconTool{
+    position: relative;
+    overflow: hidden;
+}
+.img-content{
+    position: relative;
+}
+.img-doddle{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 320px;
+}
+.img-doddle-pen{
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    width: 180px;
+    transform: scaleX(-1);
+}
+/* end of letter i  */
+/* letter N */
+
+/* end of letter N */
+
+
+
+/* letter M */
+.main-page{
+    padding-top: 170px;
+    padding-bottom: 170px;
+    height: 100vh;
+}
+/* end of letter M */
+
+
+
+/* letter O */
+.overview{
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 140px;
+    background: inherit;
+    z-index: 5;
+    height: 100vh;
+}
+/* end of letter 0  */
+
+
+/* letter S */
+.some-works{
+    padding-top: 40px;
+    /* padding-bottom: 140px; */
+    position: relative;
+}
+.scroll-animate{
+    position: absolute;
+    transform: rotate(90deg);
+    right: 60px;
+    top: 60px;
+}
+.scroll-animate::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 20px;
+    background: black;
+    top: 10px;
+    left: 50px;
+    animation: animated 2s cubic-bezier(0.58, -0.02, 0.27, 0.99) infinite;
+}
+section:nth-child(1){
+    background-color: black;
+    position: relative;
+    height: 100vh;
+}
+.show-skill,
+.show-me{
+    position: relative;
+    overflow: hidden;
+}
+.show-skill .hide{
+    position: relative;
+    top: 150px;
+    transition: .5s
+}
+.show-me .hide{
+    position: relative;
+    top: 50px;
+    transition: .5s
+}
+.show-skill .show,
+.show-me .show{
+    top: 0;
+}
+.skill{
+    position: relative;
+}
+.skill-page{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+.sm-btn{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    padding: 1.6em 1.6em 1.5em 1.6em;
+    opacity: 0;
+    
+}
+.sm-btn:hover{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: 2;
+    transition: all .3s;
+    display: flex;
+    opacity: 1;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.sm-btn a{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.sm-btn a,
+.sm-btn p{
+    color:var(--bs-white);
+}
+.social-network{
+    display: flex;
+    gap: 1rem;
+}
+
+/* end of letter S */
+
+
+
+/* letter T */
+#toolIcon{
+    
+}
+/* end of letter T  */
+
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+
+
+/* letter W  */
+.websites{
+    padding-top: 0px;
+    position: fixed;
+}
+.websites .grid-sites{
+    padding-top: 160px;
+}
+.websites-hide{
+    top: 600px;
+    opacity: 0;
+    transition: ease-in-out .5s;
+    position: relative;
+}
+.websites-reveal{
+    top: 0px;
+    opacity: 1;
+    position: relative;
+}
+.works{
+    position: relative;
+    left: 80px;
+    bottom: 20px;
+}
+.works p:nth-child(1) {
+    position: absolute;
+    top:320px;
+    transition: ease-in-out .3s;
+    opacity: 0;
+}
+.works p:nth-child(2) {
+    position: absolute;
+    top:25px;
+    transition: ease-in-out .3s;
+    opacity: 0;
+}
+
+/* end of letter W  */
+
+
+/* KEYFRAMES  */
+@keyframes animated {
+    0%{
+        left:50px;
+    }
+    /* 50%{
+        left:80px;
+    } */
+    100%{
+        left:100px;
+    }
+}
+
+
+
+/* MEDIA QUERY  */
+
+
+@media only screen and (max-width: 992px){
+    .content-works #iconTool{
+        height: 25vw;
+    }
+    .content-works,
+    .main-page{
+        padding-top: 160px;
+    }
+    #artWorks .col-2,
+    #artWorkss .col-2{
+        width: 28.666667% ;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .about-me{
+        height: 370px;
+    }
+    .content-works #iconTool{
+        height: 28vw;
+    }
+    .content-works
+    {
+        padding-top: 100px;
+    }
+    .img-doddle{
+        width: 230px;
+    }
+    .img-doddle-pen{
+        width: 130px;
+    }
+    #contact .main-page{
+        padding-top: 140px;
+    }
+    .overview{
+        padding-top: 90px;
+    }
+    .content-works .pyc-0{
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 737px){
+    .about-me{
+        margin: auto;
+        width: 85%;
+    }
+    .img-doddle{
+        width: 120px;
+    }
+    .img-doddle-pen{
+        width: 80px;
+    }
+    .main-page{
+        padding-top: 190px;
+    }
+    .scroll-animate{
+        left: -15px;
+        bottom: -55px;
+        right: unset;
+        top: unset;
+    }
+}
+
+@media only screen and (max-width: 475px){
+    .about-me{
+        height: auto;
+        width: auto;
+    }
+    #artWorks .col-2,
+    #artWorkss .col-2{
+        width: 45.666667%;
+    }
+    .content-works{
+        padding-top: 180px;
+    }
+    .content-works #iconTool{
+        height: 48vw;
+    }
+    #iconTool p {
+        font-size: 12px;
+    }
+    .img-doddle,
+    .img-doddle-pen{
+        display: none;
+    }
+    .main-page{
+        padding-top: 180px;
+    }
+    #mySkill .content-works{
+        padding-top: 75px;
+    }
+    .overview{
+        padding-top: 50px;
+    }
+    .works{
+        left: 0;
+    }
+}
+
